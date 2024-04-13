@@ -1,0 +1,150 @@
+:root {
+   --color-light: #ffffff;
+   --color-dark: #000000;
+   --color-pink: #dc143c;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+boby {
+    font-size: 1.6rem;
+}
+
+
+.container {
+    height: 100vh;
+    width: 100vmax;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-image: linear-gradient(rgba(0,0,0, .8), rgba(0,0,0, .3)),
+    url(../images/pexels-felix-mittermeier-957002.jpg);
+}
+.container nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0rem 2rem;
+    color: var(--color-light);
+}
+.container ul {
+    display: flex;
+    flex-direction:row ;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.header-menu a{
+    text-decoration: none;
+    color:var(--color-light);
+    font-weight: 600;
+    transform: .8s;
+}
+
+.header-menu a:hover {
+    color: var(--color-pink);
+}
+.cabessario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.cabessario h1 {
+    padding-bottom: 2rem;
+    color: var(--color-light);
+    font-size: 2rem;
+}
+
+.cabessario p {
+    color:var(--color-light);
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.cabessario a {
+    border: var(--color-pink) solid 1px;
+    border-radius: 70px;
+    background-color: var(--color-pink);
+    color:var(--color-light);
+    height: 3rem;
+    width: 10rem; 
+    text-decoration: none;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    transition: .5s;
+    font-size: 14px;
+}
+
+.cabessario a:hover {
+    background-color: transparent;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+.card {
+    border: transparent solid 1px;
+    border-radius: 19px;
+    padding: 20px;
+    margin: 1rem;
+    box-shadow: 1px 2px 30px #ccc;
+    transition: 0.7s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 1px 2px 25px var(--color-pink);
+}
+
+.card h3 {
+    color: var(--color-pink);
+}
+
+.card img {
+    height: 30vh;
+    width: 30vh;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.footer {
+    background-color: transparent;
+    color: var(--color-dark);
+    height: 7vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.footer h2 {
+    font-size: .9rem;
+    font-weight: 100;
+}
